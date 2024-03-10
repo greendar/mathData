@@ -15,8 +15,12 @@ with open("Book1.csv") as file_in:
     lines = []
     for line in file_in:
         dataList = line.split(",")
-        newStudent.newCourse = Course(dataList[0], dataList[1], dataList[2], dataList[3], dataList[4])
+        newStudent.addClass = Course(dataList[0], dataList[1], dataList[2], dataList[3], dataList[4])
         #print(newStudent.newCourse)
         #lines.append(line)
 
-print(newStudent)
+newStudent.showStudent()
+"""
+This is not yet showing the course that have been added
+"""
+

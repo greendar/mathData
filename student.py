@@ -9,13 +9,12 @@ class Student:
 
   def __str__(self):
     courseList = f"{self.firstName} {self.lastName}"
+    return courseList
+  
+  def showStudent(self):
+    print(self.firstName, self.lastName)
     for item in self.courses:
-      courseList += f'Code: {self.courseCode}    '
-      courseList += f'Teacher: {self.courseTeacher}    '
-      courseList += f'Mark: {self.courseMark}    '
-      courseList += f'Year: {self.schoolYear}    '
-      courseList += f'Semester: {self.semester}    '
-      return courseList
+      print(item)
   
 
 
@@ -35,7 +34,6 @@ class Course:
     outString += f'Year: {self.schoolYear}    '
     outString += f'Semester: {self.semester}    '
     return outString
-
 
 
 if __name__ == "__main__":
